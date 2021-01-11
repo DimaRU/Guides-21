@@ -5,4 +5,5 @@
 
 #### Оглавление:
 
-[Краткое руководство по командной строке](Command%20line%20short%20guide.md)
+* [Краткое руководство по командной строке](Command%20line%20short%20guide.md)
+* [Обучающий курс по git](https://githowto.com/ru)
