@@ -7,3 +7,4 @@
 
 * [Краткое руководство по командной строке](Command%20line%20short%20guide.md)
 * [Обучающий курс по git](https://githowto.com/ru)
+* [Целочисленные типы в Clang 64-бит ](Clang%2064-bit%20compiler%20Integer%20Types.md)
