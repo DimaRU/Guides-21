@@ -89,13 +89,13 @@ Makefile содержит разделы для "целей" [targets], зави
 
 Пример Makefile
 
-Ниже приводится простой пример (номера строк добавлены для ясности).
+Ниже приводится простой пример.
 
 ```make
-  1 client: conn.o
-  2    g++ client.c conn.o -o client
-  3 conn.o: conn.c conn.h
-  4    g++ -c conn.c -o conn.o
+   client: conn.o
+      cc client.c conn.o -o client
+   conn.o: conn.c conn.h
+      cc -c conn.c -o conn.o
 ```
 В этом примере строка, содержащая текст client: conn.o, называется
 "строкой зависимостей", а строка g++ client.c conn.o -o client
@@ -116,13 +116,13 @@ Makefile содержит разделы для "целей" [targets], зави
 Ниже приводится пример makefile с комментариями:
 
 ```make
-  1 # Создать исполняемый файл "client"
-  2 client: conn.o
-  3    g++ client.c conn.o -o client
-  4
-  5 # Создать объектный файл "conn.o"
-  6 conn.o: conn.c conn.h
-  7    g++ -c conn.c -o conn.o
+   # Создать исполняемый файл "client"
+   client: conn.o
+      cc client.c conn.o -o client
+  
+   # Создать объектный файл "conn.o"
+   conn.o: conn.c conn.h
+      cc -c conn.c -o conn.o
 ```
 "Ложная" цель[1]
 
@@ -136,7 +136,7 @@ Makefile содержит разделы для "целей" [targets], зави
 
 ```make
   clean:
-          rm *.o temp
+	rm *.o temp
 ```
 Поскольку команда rm не создает файл с именем clean, то такого файла
 никогда не будет существовать и поэтому команда make clean всегда
@@ -196,18 +196,17 @@ Makefile содержит разделы для "целей" [targets], зави
 следующие определения:
 
 ```make
-  CC = gcc -o
+  CC = clang -o
   CC = $(CC) -O2
 ```
 выльются в бесконечный цикл. Для разрешения этой проблемы следует
 использовать "упрощенно вычисляемые" переменные:
 
 ```make
-  CC := gcc -o
+  CC := clang -o
   CC += $(CC) -O2
 ```
-Где символ ':=' создает переменную CC и присваивает ей значение "gcc
--o". А символ '+=' добавляет "-O2" к значению переменной CC.
+Где символ ':=' создает переменную CC и присваивает ей значение "clang -o". А символ '+=' добавляет "-O2" к значению переменной CC.
 
 Заключение
 
