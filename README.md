@@ -9,4 +9,5 @@
 * [Обучающий курс по git](https://githowto.com/ru)
 * [Введение в язык программирования С](Introduction%20To%20The%20C%20Language.md)
 * [Целочисленные типы в Clang 64-бит ](Clang%2064-bit%20compiler%20Integer%20Types.md)
+* [make mini HOWTO, перевод на русский](Make%20mini%20HOWTO.md)
 * [Классическое руководство по make](https://dimaru.github.io/make-doc)
