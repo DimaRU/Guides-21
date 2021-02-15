@@ -3,8 +3,8 @@ plugins:
  - github-pages
  - jekyll-readme-index
 
-title: [Материалы для новичков Школы 21]
-description: [A short guide]
+title: [Guides 21]
+description: [Материалы для студентов Школы 21]
 color: "#20A1BD"
 google_analytics: UA-189768467-1
 show_downloads: false
