@@ -6,7 +6,7 @@ plugins:
 title: [Материалы для новичков Школы 21]
 description: [A short guide]
 color: "#20A1BD"
-google_analytics: G-7KL0BF2SES
+google_analytics: UA-189768467-1
 show_downloads: false
 relative_links:
   enabled: true
