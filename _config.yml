@@ -1,0 +1,16 @@
+#theme: jekyll-theme-cayman
+theme: jekyll-theme-hacker
+plugins:
+ - github-pages
+ - jekyll-readme-index
+
+title: [Материалы для новичков Школы 21]
+description: [A short guide]
+color: "#20A1BD"
+google_analytics: G-7KL0BF2SES
+show_downloads: false
+relative_links:
+  enabled: true
+  collections: true
+#include:
+
