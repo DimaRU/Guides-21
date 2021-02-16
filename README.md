@@ -17,4 +17,4 @@
 * [Обучающий курс по git](https://githowto.com/ru)
 * [Основы комндной строки на Hexlet](https://ru.hexlet.io/courses/cli-basics)
 * [Простой курс Си на Stepik](https://stepik.org/course/3078/promo)
-* [Практикум по Си на Stepik](https://stepik.org/course/196244/promo)
+* [Практикум по Си на Stepik](https://stepik.org/course/50696/promo)
